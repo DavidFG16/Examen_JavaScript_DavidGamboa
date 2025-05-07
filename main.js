@@ -1,6 +1,6 @@
 import {nuevaFeria as dataFeria, nuevaFeria} from "./data/data.js"
 
-let data = JSON.parse(localStorage.getItem("guardado", JSON.stringify(dataFeria))) || []
+let data = JSON.parse(localStorage.getItem("guardado", JSON.stringify(dataFeria))) || nuevaFeria
 
 const nombreEvento = document.getElementById("nombre-evento")
 const lugar = document.getElementById("lugar")
@@ -9,6 +9,7 @@ const final = document.getElementById("fecha-final")
 const horario = document.getElementById("horario")
 const button = document.getElementById("boton-registrar")
 
+console.log(dataFeria)
 button.addEventListener("click", ()=>{
 let newItem =
     {
@@ -18,6 +19,7 @@ let newItem =
         final:final.value,
         horario:horario.value
     }
-    localStorage.setItem("guardado", JSON.stringify(newItem))
+    data.push(newItem)
+    localStorage.setItem("guardado", JSON.stringify(data))
 })
 console.log(data)

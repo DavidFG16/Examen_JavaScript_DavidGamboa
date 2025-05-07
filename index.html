@@ -3,9 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Ferias de Emprendimiento BucaraEmprende</title>
 </head>
 <body>
-    
+    <h1>Ferias de Emprendimiento BucaraEmprende</h1>
+
+    <main>
+        <form action="#" id="registrar-evento">
+            <label>Nombre del evento*</label>
+                <input type="text" id="nombre-evento" placeholder="Ferias de Emprendimiento BucaraEmprende">
+
+            <label>Lugar*</label>
+                <input type="text" id="lugar" placeholder="Centro de convenciones Neomundo">
+            
+
+            <section class="dates">
+                <label>Fecha de inicio</label>
+                    <input type="date" id="fecha-inicio">
+                
+
+                <label>Fecha de finalización</label>
+                    <input type="date" id="fecha-final">
+            </section>
+
+            <label>Horario*</label>
+                <input type="text" id="horario" placeholder="9:00 - 7:00 PM">
+
+                <button id="boton-registrar" type="submit">Registrar Evento</button>
+        </form>
+    </main>
 </body>
 </html>

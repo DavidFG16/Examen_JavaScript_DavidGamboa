@@ -24,3 +24,17 @@ h1{
 #boton-registrar{
     width: 120px;
 }
+
+.listado-ferias{
+    margin-top: 40px;
+}
+
+.card{
+    margin:20px 0 0 20px ;
+    border: 2px solid blue;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    width: 700px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

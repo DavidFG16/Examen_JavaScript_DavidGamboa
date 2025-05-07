@@ -3,5 +3,7 @@ export let emprendedor = {
     categoria:"hola",
     descripcion:"SADDSADSADSADSADSADA",
     redes:"Redesadsaasdasdsad",
-    
+    nombreProducto:"saasddsa",
+    desProducto:"asaddsadsadsa",
+    precio:"d<zdsadsadsadas"
 }

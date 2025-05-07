@@ -44,31 +44,3 @@ La entrega de este examen se realizará grupos de 1 persona, donde se debe anexa
 Para desarrollar la división del proyecto FrontEnd se deben tener los siguientes puntos en cuenta:
     • Debe ser responsive y manejar UI/UX a lo largo de todo el proyecto.
     • Se tendrá en cuenta la creatividad y redacción del contenido.
-
-## Diseño de referencia
-## Dashboard/Home
-![alt text](image.png)  
-
-## Registro de nuevo evento
-![alt text](image-8.png)
-
-## Listado de eventos
-![alt text](image-9.png)
-
-## Registro de emprendedor a un evento y sus productos
-![alt text](image-10.png)
-
-## Vista de emprendedores participantes a un evento con detalle de un solo producto desde un evento.
-![alt text](image-12.png)
-
-## Vista de emprendedores participantes a un evento con detalle de dos o más productos.
-![alt text](image-13.png)
-
-
-
-## Eventos pasados – filtro.
-![alt text](image-14.png)
-
-
-## Eventos próximos – filtro.
-![alt text](image-15.png)

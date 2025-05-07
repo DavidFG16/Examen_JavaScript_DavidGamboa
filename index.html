@@ -10,8 +10,9 @@
 <body>
     <h1>Ferias de Emprendimiento BucaraEmprende</h1>
 
-    <main>
+    <section class="all">
         <form action="#" id="registrar-evento">
+            <h2>Registrar Nuevo Evento</h2>
             <label>Nombre del evento*</label>
                 <input type="text" id="nombre-evento" placeholder="Ferias de Emprendimiento BucaraEmprende">
 
@@ -33,12 +34,56 @@
 
                 <button id="boton-registrar" type="submit">Registrar Evento</button>
         </form>
-    </main>
-
-    <section class="listado-ferias">
-        
-        <h2>Ferias Disponibles</h2>
-        <lista-ferias></lista-ferias>
+        <section class="listado-ferias" id="listado-ferias" style="display: none;">
+            
+            <h2>Ferias Disponibles</h2>
+            <lista-ferias ></lista-ferias>
+        </section>
     </section>
+        <hr></hr>
+
+        <section class="all">
+            <form action="#" id="registrar-evento2">
+                <h2>Registrar Nuevo emprendedor</h2>
+                <label>Nombre del Emprendedor*</label>
+                    <input type="text" id="nombre-evento2" placeholder="Ferias de Emprendimiento BucaraEmprende">
+    
+                <label>Categorìa*</label>
+                    <input type="text" id="lugar2" placeholder="Centro de convenciones Neomundo">
+                
+    
+                    <label>Descripción</label>
+                        <input type="text" id="fecha-inicio2">
+                    
+    
+                    <label>Redes Sociales (Enlaces)</label>
+                        <input type="text" id="fecha-final2">
+    
+                <section class="product">
+                    <h3>Producto 1</h3>
+                    <label >Nombre</label>
+                        <input type="text">
+
+                    <label >Descripción (opcional)</label>
+                        <input type="text">
+                        
+                    <label >Precio (opcional)</label>
+                        <input type="text">
+                </section>
+    
+                    <button id="boton-registrar2" type="submit">Registrar Evento</button>
+            </form>
+            <section class="listado-ferias" id="listado-ferias" style="display: none;">
+                
+                <h2>Ferias Disponibles</h2>
+                <lista-ferias ></lista-ferias>
+            </section>
+        </section>
+
+        
+        
+    
+
+
 </body>
 </html>

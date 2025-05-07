@@ -8,10 +8,13 @@ const incio = document.getElementById("fecha-inicio")
 const final = document.getElementById("fecha-final")
 const horario = document.getElementById("horario")
 const button = document.getElementById("boton-registrar")
+const list_ferias = document.getElementById("listado-ferias")
+
 
 console.log(dataFeria)
-button.addEventListener("click", ()=>{
-let newItem =
+button.addEventListener("click", (e)=>{
+e.preventDefault()
+    let newItem =
     {
         nombre:nombreEvento.value ,
         lugar: lugar.value,
@@ -21,6 +24,7 @@ let newItem =
     }
     data.push(newItem)
     localStorage.setItem("guardado", JSON.stringify(data))
+    list_ferias.style.display ="block"
 })
 console.log(data)
 
@@ -28,9 +32,9 @@ class listaFerias extends HTMLElement{
     constructor(){
         super()
         const shadow = this.attachShadow({mode :"open"})
-    
-
-const style = document.createElement("style")
+        
+        
+        const style = document.createElement("style")
 style.textContent =`
 .card{
     margin:20px 0 0 20px ;

@@ -1,14 +1,14 @@
-import {nuevaFeria as dataFeria, nuevaFeria} from "./data/data.js"
+import { emprendedor as dataFeria, nuevaFeria} from "./data/data2.js"
 
 let data = JSON.parse(localStorage.getItem("guardado", JSON.stringify(dataFeria))) || nuevaFeria
 
-const nombreEvento = document.getElementById("nombre-evento")
-const lugar = document.getElementById("lugar")
-const incio = document.getElementById("fecha-inicio")
-const final = document.getElementById("fecha-final")
-const horario = document.getElementById("horario")
-const button = document.getElementById("boton-registrar")
-const list_ferias = document.getElementById("listado-ferias")
+const nombreEvento = document.getElementById("nombre-evento2")
+const lugar = document.getElementById("lugar2")
+const incio = document.getElementById("fecha-inicio2")
+const final = document.getElementById("fecha-final2")
+const nombreP = document.getElementById("nombreP")
+const descriP = document.getElementById("descripP")
+const precio = document.getElementById("precio")
 
 
 console.log(dataFeria)
@@ -17,10 +17,10 @@ e.preventDefault()
     let newItem =
     {
         nombre:nombreEvento.value ,
-        lugar: lugar.value,
-        inicio:incio.value,
-        final:final.value,
-        horario:horario.value
+        categoria: lugar.value,
+        descripcion:incio.value,
+        redes:final.value,
+        desProducto:horario.value
     }
     data.push(newItem)
     localStorage.setItem("guardado", JSON.stringify(data))
@@ -63,4 +63,4 @@ shadow.appendChild(style)
 }
 }
 
-customElements.define("lista-ferias", listaFerias)
+customElements.define("lista-ferias2", listaFerias)
